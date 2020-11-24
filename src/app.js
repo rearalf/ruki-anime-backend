@@ -12,8 +12,9 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan('dev'));
 
+app.use('/api/user', require('./routes/user.routes'));
 app.use('/', (req, res) => {
-	res.json({ message: 'Hello World' });
+	res.send({ message: 'Hello World' });
 });
 
 module.exports = app;
