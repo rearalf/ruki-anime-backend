@@ -1,0 +1,36 @@
+{
+	"name": "ruki-anime-backend",
+	"version": "1.0.0",
+	"description": "Backend de ruki anime with node.js express",
+	"main": "index.js",
+	"author": {
+		"email": "rear_recinos@hotmail.com",
+		"name": "Ricardo Alf",
+		"url": "https://rearalf.rearalf.vercel.app"
+	},
+	"keywords": [ "backend-api", "express" ],
+	"homepage": "https://github.com/rearalf/ruki-anime-backend#readme",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rearalf/ruki-anime-backend.git"
+	},
+	"bugs": {
+		"url": "https://github.com/rearalf/ruki-anime-backend/issues"
+	},
+	"scripts": {
+		"start": "node ./src/index.js",
+		"dev": "nodemon ./src/index.js"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.10.15",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.6"
+	}
+}
