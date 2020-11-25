@@ -12,8 +12,9 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan('dev'));
 
+app.use('/api/anime', require('./routes/anime.routes'));
 app.use('/api/user', require('./routes/user.routes'));
-app.use('/', (req, res) => {
+app.use('/api', (req, res) => {
 	res.send({ message: 'Hello World' });
 });
 
