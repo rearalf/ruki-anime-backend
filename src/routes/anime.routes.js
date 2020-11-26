@@ -6,6 +6,6 @@ router.get('/test', (req, res) => {
 	res.json({ message: 'Anime path' });
 });
 
-router.route('/').all(Auth).get(getAllAnimes).post(addAnime);
+router.route('/:id_user?').all(Auth).get(getAllAnimes).post(addAnime);
 
 module.exports = router;

@@ -2,7 +2,7 @@ const animeCtrl = {};
 const Anime = require('../models/Anime');
 
 animeCtrl.getAllAnimes = async (req, res) => {
-	const { id_user } = req.body;
+	const { id_user } = req.params;
 	const AllAnimes = await Anime.find({ id_user });
 	res.json({ message: 'Animes', AllAnimes });
 };
