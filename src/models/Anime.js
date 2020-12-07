@@ -8,7 +8,7 @@ const GenresSchema = new Schema({
 
 const AnimeSchema = new Schema(
 	{
-		id_user: { type: String, required: true, unique: true },
+		id_user: { type: String, required: true },
 		mal_id: { type: Number, required: true, unique: true },
 		image_url: { type: String, required: true },
 		title: { type: String, required: true },

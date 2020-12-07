@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const UserSchema = new Schema(
 	{
 		id_user: { type: String, required: true, unique: true },
-		email: { type: String, required: true, unique: true },
+		email: { type: String, required: true, unique: true, lowercase: true },
 		date: { type: Date, default: Date.now },
 	},
 	{
